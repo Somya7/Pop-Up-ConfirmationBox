@@ -1,7 +1,8 @@
 import { React } from "react";
+import WarningIcon from "@material-ui/icons/Warning";
+import "./Dialog.css";
 import {
   Dialog,
-  DialogTitle,
   DialogContent,
   DialogActions,
   Button,
@@ -17,9 +18,13 @@ export default function DailogBox(props) {
   return (
     <div>
       <Dialog open={dialog.isOpen}>
-        <DialogTitle></DialogTitle>
         <DialogContent>
-          <Typography variant="h6">Do you want to leave this page !!</Typography>
+          <div className="icon">
+            <WarningIcon />
+          </div>
+          <Typography variant="h6">
+            Do you want to leave this page !!
+          </Typography>
         </DialogContent>
         <DialogActions>
           <Button variant="outlined" color="primary" onClick={closeTab}>

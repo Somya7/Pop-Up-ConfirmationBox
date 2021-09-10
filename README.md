@@ -7,6 +7,8 @@
 ## Available Scripts
 
 In the project directory, you can run:
+### `yarn install`
+Install all dependencies: yarn or yarn install.
 
 ### `yarn start`
 
